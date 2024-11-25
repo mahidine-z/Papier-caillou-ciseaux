@@ -20,10 +20,32 @@
         // role: assigner une couleur a l'arriere plan de la div
         // parametre : couleur
         // retour:rien
-        function changeDeCouleur (couleur{
+        function changeDeCouleur (couleur){
             let div= document.querySelector (".test")
             div.style.backgroundColor= couleur
         }
+
+        function randomColor(){
+            //role: construire une couleur aléatoire (r,g,b)
+            // parametre:non
+            // retour: la couleur
+
+        let r= Math.ceil(Math.random()*255)
+        let g= Math.ceil(Math.random()*255)
+        let b= Math.ceil(Math.random()*255)
+    return `rdb`(${r},${g},${b})
+    let div= document.querySelector(".test)")
+    div.addEventListener("click",color)
+        }
+
+
+
+    function color(){
+        let couleur=randomColor()
+        changeDecouleur(couleur)
+
+    }
+    
     </script>
 </body>
 </html>
